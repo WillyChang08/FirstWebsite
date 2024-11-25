@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產品上架 - 電子商務網站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class = "link">
+            <a href="index.html">首頁</a>
+            <a href="search.html">產品搜尋</a>
+            <a href="upload.html">產品上架</a>
+            <a href="remove.html">產品下架</a>
+            <a href="about.html">關於我們</a>
+            <a href="login.html" class = "login">登入</a>
+        </div> 
+    </header>
+    <main>
+        <h1>產品上架</h1>
+        <form id="upload-form">
+            <label for="product-name">產品名稱:</label>
+            <input type="text" id="product-name" required>
+
+            <label for="product-price">價格:</label>
+            <input type="number" id="product-price" required>
+
+            <label for="product-category">類別:</label>
+            <input type="text" id="product-category" required>
+
+            <label for="product-image">產品圖片:</label>
+            <input type="file" id="product-image" accept="image/*" required>
+
+            <button type="submit">上架產品</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

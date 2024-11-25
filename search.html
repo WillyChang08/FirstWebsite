@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產品搜尋</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class = "link">
+            <a href="index.html">首頁</a>
+            <a href="search.html">產品搜尋</a>
+            <a href="upload.html">產品上架</a>
+            <a href="remove.html">產品下架</a>
+            <a href="about.html">關於我們</a>
+            <a href="login.html" class = "login">登入</a>
+        </div> 
+    </header>
+
+    <main>
+        <div class="search-container">
+            <h2>產品搜尋</h2>
+            <div class="search-box">
+                <input 
+                    type="search" 
+                    id="searchInput" 
+                    placeholder="請輸入產品名稱..."
+                    oninput="liveSearch()"
+                >
+            </div>
+            
+            <div id="searchResults" class="search-results">
+                <!-- 搜尋結果將在這裡動態顯示 -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 電子商務網站</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
